@@ -21,3 +21,72 @@ body {
 img {
     display: block;
 }
+
+/*---Header---*/
+.container{
+    width:450px;
+    margin:0 auto;
+    padding:0 32px;
+}
+.profile{
+    padding:80px 0;
+}
+.profile::after{
+    content:"";
+    display:block;
+    align-items:center;
+    justify-content: center;
+}
+.profile-user-name{
+    display:inline-block;
+}
+.profile-image{
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:3rem;
+    width:calc(33% - 16px);
+}
+.profile-image img{
+    border:5px solid #008000;
+    border-radius:50%;
+    width:155px;
+    height:150px;
+}
+.profile-user-settings{
+    float:left;
+    margin-top:17px;
+}
+.profile-stats{
+    float:left;
+    margin-top:20px;
+}
+.profile-stats li{
+    display:inline-block;
+    right:10px;
+    margin-right: 10px;
+}
+.profile-stat-count{
+    cursor:pointer;
+}
+.profile-bio{
+    float:right;
+    margin-right:10px;
+}
+.btn{
+    display:inline-block;
+    border: 2px solid#000;
+    all:unset;
+    cursor:pointer;
+}
+.profile-edit-btn{
+    margin-left:10px;
+    line-height:normal;
+    border:1px solid #000;
+}
+.profile-settings-btn{
+    border: 1px solid#000;
+    font-size:larger;
+    margin-left:10px;
+}
