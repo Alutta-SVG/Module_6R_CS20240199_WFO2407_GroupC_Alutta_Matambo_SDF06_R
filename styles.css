@@ -39,6 +39,8 @@ img {
 }
 .profile-user-name{
     display:inline-block;
+    font-weight: lighter;
+    font-family: 'arial';
 }
 .profile-image{
     float:left;
@@ -69,24 +71,28 @@ img {
 }
 .profile-stat-count{
     cursor:pointer;
+    font-weight: bold;
 }
 .profile-bio{
     float:right;
     margin-right:10px;
+    font
 }
 .btn{
     display:inline-block;
-    border: 2px solid#000;
+    border:solid #000 0,5px;
     all:unset;
     cursor:pointer;
 }
 .profile-edit-btn{
     margin-left:10px;
     line-height:normal;
-    border:1px solid #000;
+    border: solid #000 0,5px;
+    border-radius: 2px;
+    font-size: xx-small;
+    font-weight: bold;
 }
 .profile-settings-btn{
-    border: 1px solid#000;
     font-size:larger;
     margin-left:10px;
 }
@@ -152,10 +158,26 @@ img {
     border-radius:50%;
     animation:spin 2s linear infinite;
 }
-@keyframes spin { 
-    {0%
-    transform: rotate(0deg);}
+@keyframes spin {
+    0%{transform: rotate(0deg)}
 
-100%{
-    transform:rotate(360deg);}
+100%{transform:rotate(360deg)};
+}
+
+/*----Hover-effects----*/
+.gallery-item:hover .gallery-item-info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+.gallery-item:hover{
+    background-color:4px 4px 4px 8px rgba(0, 0, 0, 0.884);
+}
+@media only screen and (max-width:559px) {
+    .gallery{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
