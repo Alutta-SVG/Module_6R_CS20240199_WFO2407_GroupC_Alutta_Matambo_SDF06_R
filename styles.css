@@ -143,3 +143,12 @@ img {
     overflow:hidden;
     padding: 0;
 }
+.loader {
+    margin: 10px auto;
+    width:20px;
+    height:20px;
+    border: 5px solid #ebebeb;
+    border-top:#ebebeb;
+    border-radius:50%;
+    animation:spin 2s linear infinite;
+}
