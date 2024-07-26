@@ -53,7 +53,7 @@ img {
 }
 .profile-image img{
     border: 7px solid #008000fa;
-    border-radius:60%;
+    border-radius:50%;
     width:155px;
     height:150px;
 }
@@ -104,6 +104,8 @@ img {
     font-size:larger;
     margin-left:10px;
     font-weight: bold;
+    border: solid #000 0.1px;
+    border-radius: 1px;
 }
 /*--Main-section--*/
 .gallery {
@@ -129,33 +131,35 @@ img {
 .gallery-item-info {
     position:absolute;
     bottom:0;
-    left: 0%;
+    left: 0;
     top:0;
     right: 10px;
     padding:10px;
     display:none;
+    color: #fafafa;
 }
 .gallery-item-info li {
-    display: inline block;
+    display:inline-block;
+    justify-content: space-evenly;
 }
 .gallery-item-type {
     position:absolute;
     top:10px;
     right:10px;
     padding:5px;
-
-}.gallery-item-likes{
-    list-style:none;
-    display: flex;
 }
-.gallery-item-comments {
-    list-style: none;
+.gallery-item-likes {
+    list-style:none;
+    display:flex;
+}
+.gallery-item-comments{
+    list-style:none;
     display:flex;
 }
 .visually-hidden {
     position: absolute;
-    width: 9px;
-    height:5px;
+    width: 4px;
+    height:4px;
     overflow:hidden;
     padding: 0;
 }
@@ -163,9 +167,9 @@ img {
     margin: 10px auto;
     width:20px;
     height:20px;
-    border: 5px solid #ebebebee;
-    border-top:#ebebeb3f;
-    border-radius:50%;
+    border: 5px solid #ece8e8f7;
+    border: top #000;
+    border-radius:60%;
     animation:spin 2s linear infinite;
 }
 @keyframes spin {
@@ -180,10 +184,7 @@ img {
     justify-content:center;
     align-items:center;
     position:absolute;
-    background-color: rgba(0, 0, 0, 0.288);
-}
-.gallery-item:hover{
-    background-color:4px 4px 4px 8px rgb(249, 243, 243);
+    background-color: rgba(0, 0, 0, 0.228);
 }
 
 @media (max-width:480px){
