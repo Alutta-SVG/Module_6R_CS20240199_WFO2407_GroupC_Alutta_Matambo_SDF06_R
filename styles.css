@@ -168,13 +168,16 @@ img {
     margin: 10px auto;
     width:20px;
     height:20px;
-    border: 3px solid #9a9a49;
-    border: top #000;
+    border: 3px solid #b4ba70;
+    border-top:3px #000;
     border-radius:50%;
-    animation:spin 1.5s linear infinite;
+    animation:round 1s linear infinite;
 }
-    @keyframes spin{
+    @keyframes round{
         0%{ transform: rotate(0deg); }
+
+        50%{transform:rotate(90deg);}
+
         100%{ transform: rotate(360deg);
         }
     }
