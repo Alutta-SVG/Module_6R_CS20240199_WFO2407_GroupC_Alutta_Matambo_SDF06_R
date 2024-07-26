@@ -48,6 +48,7 @@ img {
     justify-content:center;
     align-items:center;
     margin-right:3rem;
+    margin-top:10px;
     width:calc(33% - 16px);
 }
 .profile-image img{
@@ -63,6 +64,8 @@ img {
 .profile-stats{
     float:left;
     margin-top:20px;
+    margin-left:-20px;
+    font-size: xx-small;
 }
 .profile-stats li{
     display:inline-block;
@@ -75,20 +78,25 @@ img {
 }
 .profile-bio{
     float:right;
-    margin-right:10px;
-    font
+    display: flex;
+    justify-content: right;
+    margin-bottom:30px;
+    margin-top:-20px;
+    margin-right:-15px;
+    font-size:xx-small;
 }
 .btn{
     display:inline-block;
-    border:solid #000 0,5px;
+    border:solid #00000029 0.1px;
     all:unset;
     cursor:pointer;
 }
 .profile-edit-btn{
     margin-left:10px;
     line-height:normal;
-    border: solid #000 0,5px;
-    border-radius: 2px;
+    border: solid #00000029 0.1px;
+    border-radius: 1px;
+    padding:3px;
     font-size: xx-small;
     font-weight: bold;
 }
@@ -153,8 +161,8 @@ img {
     margin: 10px auto;
     width:20px;
     height:20px;
-    border: 5px solid #ebebeb;
-    border-top:#ebebeb;
+    border: 5px solid #ebebebee;
+    border-top:#ebebeb3f;
     border-radius:50%;
     animation:spin 2s linear infinite;
 }
@@ -173,8 +181,9 @@ img {
     background-color: rgba(0, 0, 0, 0.288);
 }
 .gallery-item:hover{
-    background-color:4px 4px 4px 8px rgba(0, 0, 0, 0.884);
+    background-color:4px 4px 4px 8px rgb(249, 243, 243);
 }
+
 @media only screen and (max-width:559px) {
     .gallery{
         display:grid;
