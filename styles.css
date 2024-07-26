@@ -64,8 +64,9 @@ img {
 .profile-stats{
     float:left;
     margin-top:20px;
-    margin-left:-10px;
+    margin-left:-21px;
     font-size:xx-small;
+    gap: 20px;
 }
 .profile-stats li{
     display:inline-block;
@@ -167,17 +168,16 @@ img {
     margin: 10px auto;
     width:20px;
     height:20px;
-    border: 5px solid #ece8e8f7;
+    border: 3px solid #9a9a49;
     border: top #000;
-    border-radius:60%;
-    animation:spin 2s linear infinite;
+    border-radius:50%;
+    animation:spin 1.5s linear infinite;
 }
-@keyframes spin {
-    0%{transform: rotate(0deg)}
-
-100%{transform:rotate(360deg)};
-}
-
+    @keyframes spin{
+        0%{ transform: rotate(0deg); }
+        100%{ transform: rotate(360deg);
+        }
+    }
 /*----Hover-effects----*/
 .gallery-item:hover .gallery-item-info{
     display:flex;
@@ -190,7 +190,7 @@ img {
 @media (max-width:480px){
     .profile-user-settings{
         flex-direction :column;
-        gap:10px;
+        gap:20px;
     }
     .profile-stats{
         margin: left 0;
