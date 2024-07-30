@@ -96,7 +96,7 @@ img {
     margin-left:10px;
     line-height:normal;
     border: solid #00000029 0.1px;
-    border-radius: 1px;
+    border-radius: 2px;
     padding:3px;
     font-size: xx-small;
     font-weight: bold;
@@ -105,8 +105,9 @@ img {
     font-size:larger;
     margin-left:10px;
     font-weight: bold;
-    border: solid #000 0.1px;
-    border-radius: 1px;
+    border: solid #00000029 0.1px;
+    border-radius: 2px;
+    padding:3px;
 }
 /*--Main-section--*/
 .gallery {
@@ -165,13 +166,14 @@ img {
     padding: 0;
 }
 .loader {
-    margin: 10px auto;
-    width:20px;
-    height:20px;
-    border: 3px solid #b4ba70;
-    border-top:3px #000;
+    margin:10px auto;
+    margin-left:200px;
+    width: 20px;
+    height: 20px;
+    border:3px solid #b4ba70;
+    border-top: 3px #000;
     border-radius:50%;
-    animation:round 1s linear infinite;
+    animation: round 1s linear infinite;
 }
     @keyframes round{
         0%{ transform: rotate(0deg); }
